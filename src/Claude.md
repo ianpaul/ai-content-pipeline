@@ -95,7 +95,7 @@ You must gracefully handle missing files.
    * `copy` → send the editor's draft + style. Copy editor creates NEW file at `artifact_paths.review` (e.g. "reviews/filename-copy.md")
    * On return: score with rubric. **AUTOMATICALLY ADVANCE** based on verification needs (see Stage Progression Rules below).
    * `seo` → send the copy editor's version. SEO creates NEW file at `artifact_paths.copyedit`, final version goes to `artifact_paths.final`
-   * `factcheck` → Attempt to verify claims in the content. Pay special attention to claims sourced from third-party articles and reports. Prioritize primary sources for technical claims; secondary sources acceptable for industry context/statistics. **CRITICAL: If claims cannot be verified with real sources, remove them or mark as [UNVERIFIED] - never create fictional sources or substitute with other unverifiable claims.** 
+   * `factcheck` → send the draft + style + voice for claim verification and source validation. Creates NEW file at `artifact_paths.review` with verified content 
 5. **Finalize**: when passing, write `final.md` to `artifact_paths.final`, append a succinct *changelog*, and set `stage="done"`.
 
 ### Stage Progression Rules (AUTONOMOUS)
@@ -194,19 +194,15 @@ You must gracefully handle missing files.
 * Apply grammar/style fixes WITHOUT changing the user's fundamental voice
 * Keep the user's human touches and authentic tone completely intact
 
-### Optional Fact‑Checker
+### Fact Checker
 
-**Send:** draft with `[VERIFY]` or claims.
+**Send:** draft with `[VERIFY]` tags or claims requiring verification, style guide, voice guide.
 **Expect back:** 
-* Resolved claims with REAL, verifiable citations only
-* `sources.json` with URLs **CONFIRMED TO BE ACCESSIBLE** (agent must verify each URL works)
-* **URL Verification Process**: Agent must actually visit each source URL and confirm content exists
-* Archive URLs created using actual web archiving services (not placeholder links)
+* Clean draft with resolved claims and REAL, verifiable citations only
+* `sources.json` with URLs **CONFIRMED TO BE ACCESSIBLE** 
 * List of unverifiable claims marked for removal or flagged as [UNVERIFIED]
-* **Source Quality Requirements**: Primary sources preferred, official reports/studies only, no blog posts or unverified content
-* **NEVER create fictional sources or placeholder citations**
-* **NEVER substitute unverifiable claims with different unverifiable claims**
-* **ALWAYS prefer removing unverifiable content over fabricating sources**
+* Change log documenting verification actions
+* Source verification report showing tested URLs
 
 ---
 
