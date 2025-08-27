@@ -1,0 +1,25 @@
+{
+  "id": "project-id-here",
+  "stage": "editor",
+  "inputs": {
+    "brief_path": "briefs/your-brief.json",
+    "style_path": "style_guide.md",
+    "voice_path": "voice_guide.md", 
+    "rubric_path": "rubric.yaml"
+  },
+  "artifact_paths": {
+    "original": "drafts/project-name-original.md",
+    "draft": "drafts/project-name.md",
+    "review": "reviews/project-name-dev.md",
+    "copyedit": "reviews/project-name-copy.md", 
+    "final": "final/project-name-final.md"
+  },
+  "quality_gates": ["rubric"],
+  "retry_counts": {
+    "editor": 0,
+    "copy": 0,
+    "factcheck": 0
+  },
+  "notes": "Task contract tracks the editorial workflow progress and decisions",
+  "history": []
+}

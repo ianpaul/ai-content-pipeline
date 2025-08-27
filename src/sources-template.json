@@ -1,0 +1,25 @@
+{
+  "sources": [
+    {
+      "id": "example_source_id",
+      "title": "Example Source Title",
+      "url": "https://example.com/source",
+      "archive_url": "https://web.archive.org/web/[timestamp]/https://example.com/source",
+      "publisher": "Publisher Name",
+      "date": "YYYY-MM-DD",
+      "description": "Brief description of what this source provides",
+      "verification_date": "YYYY-MM-DD",
+      "access_status": "confirmed_accessible",
+      "source_type": "primary|secondary|official_report|study"
+    }
+  ],
+  "verification_notes": {
+    "process": "All URLs manually verified to be accessible on verification_date",
+    "archive_method": "Web Archive or similar service used for backup URLs",
+    "quality_standard": "Primary sources preferred, official reports/studies only"
+  },
+  "unverifiable_claims_removed": [
+    "List any claims that had to be removed due to lack of verifiable sources"
+  ],
+  "notes": "This file is created by the fact-checker agent to document all sources used in the article. Each source must be real, accessible, and verifiable."
+}

@@ -1,0 +1,87 @@
+{
+  "id": "project-id-here",
+  "content_type": "blog",
+  "title_working": "Working Title for Your Article",
+  "title_seo": "SEO-Optimized Title (appears in search results and browser tabs)",
+  "title_meta": "Meta Title for Social Sharing (can be different from SEO title)",
+  "author": "Author Name",
+  "audience": {
+    "primary": "Define your primary audience (e.g., IT Managers, Developers, Marketing Teams)",
+    "stage": "Buyer journey stage (e.g., Awareness, Consideration, Decision)"
+  },
+  "format_requirements": {
+    "blog": { "word_count": "target range", "sections": "required sections" },
+    "whitepaper": { "page_count": "target pages", "executive_summary": "required" },
+    "case_study": { "sections": ["challenge", "solution", "results"] },
+    "social": { "character_limit": "platform specific", "hashtags": "required tags" },
+    "email": { "subject_line": "required", "preview_text": "required", "cta": "primary action" }
+  },
+  "angle": "Your unique angle or hook - what makes this article compelling and differentiated",
+  "objectives": [
+    "Primary business objective (e.g., Position company as thought leader)",
+    "Secondary objective (e.g., Drive traffic to specific product page)",
+    "Tertiary objective (e.g., Support sales conversations)"
+  ],
+  "wordcount_target": 800,
+  "outline": [
+    { "h2": "First Section Heading", "notes": "Brief description of what this section covers" },
+    { "h2": "Second Section Heading", "notes": "Brief description of what this section covers" },
+    { "h2": "Third Section Heading", "notes": "Brief description of what this section covers" }
+  ],
+  "key_points": [
+    "Important point or statistic to include",
+    "Key message or takeaway",
+    "Supporting evidence or example",
+    "Call-to-action or next steps"
+  ],
+  "claims_requiring_evidence": [
+    "Any statistics or data points that need verification",
+    "Third-party claims that need citations", 
+    "Technical assertions that need backing"
+  ],
+  "examples_case_studies": [
+    "Relevant case studies to reference",
+    "Industry examples to include",
+    "Customer success stories (if applicable)"
+  ],
+  "keywords": {
+    "primary": "main SEO keyword",
+    "secondary": ["supporting keyword 1", "supporting keyword 2", "supporting keyword 3"]
+  },
+  "internal_links": [
+    "Related content on your site to link to",
+    "Product pages to reference",
+    "Previous articles to connect"
+  ],
+  "external_sources": [
+    { "title": "Name of external report/study to reference" },
+    { "title": "Industry research to cite" }
+  ],
+  "tone_guide": "Brief description of desired tone (e.g., Professional but accessible, Technical but approachable)",
+  "content_specifications": {
+    "voice": "Conversational/Formal/Technical - match your brand",
+    "complexity_level": "Beginner/Intermediate/Advanced for target audience",
+    "call_to_action": "Primary action you want readers to take"
+  },
+  "constraints": [
+    "Things to avoid (e.g., No competitor bashing)",
+    "Compliance requirements (e.g., Support all claims with data)",
+    "Brand guidelines to follow"
+  ],
+  "artifact_paths": {
+    "draft": "drafts/project-name.md",
+    "review": "reviews/project-name-dev.md", 
+    "copyedit": "reviews/project-name-copy.md",
+    "final": "final/project-name-final.md"
+  },
+  "files": {
+    "style_path": "style_guide.md",
+    "rubric_path": "rubric.yaml",
+    "terms_path": "terms.yaml"
+  },
+  "notes": "Additional context, background information, or special instructions for the editorial team",
+  "deadlines": {
+    "draft_due": "YYYY-MM-DD",
+    "publish_target": "YYYY-MM-DD"
+  }
+}

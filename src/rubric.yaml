@@ -1,0 +1,107 @@
+---
+name: "Content Quality Rubric"
+description: "Scoring criteria for blog content evaluation"
+version: "1.0"
+passing_threshold: 24  # out of 30 total points
+individual_minimum: 4  # minimum score per criterion
+
+criteria:
+  audience_fit:
+    name: "Audience Fit"
+    description: "Content appropriately targets the intended audience specified in the brief"
+    max_score: 5
+    scoring:
+      5: "Perfect targeting - language, examples, and depth ideal for audience"
+      4: "Strong targeting with minor adjustments needed"
+      3: "Generally appropriate with some misalignment" 
+      2: "Somewhat off-target, needs significant adjustment"
+      1: "Poor targeting, major revision required"
+      0: "Completely inappropriate for audience"
+
+  thesis_clarity:
+    name: "Thesis Clarity" 
+    description: "Clear argument and positioning throughout the piece"
+    max_score: 5
+    scoring:
+      5: "Crystal clear thesis, consistent positioning throughout"
+      4: "Clear thesis with minor clarity issues"
+      3: "Generally clear with some confusion points"
+      2: "Somewhat unclear, needs significant clarification" 
+      1: "Poorly articulated thesis"
+      0: "No clear thesis or positioning"
+
+  evidence_citations:
+    name: "Evidence & Citations"
+    description: "Credible support for all claims with proper citations"
+    max_score: 5
+    scoring:
+      5: "All claims well-supported with verified, real sources"
+      4: "Most claims supported, minor citation issues"
+      3: "Generally supported with some gaps"
+      2: "Significant evidence gaps or weak sources"
+      1: "Poor evidence support or unverifiable sources"
+      0: "No credible evidence, fictional sources, or fabricated citations"
+
+  structure_flow:
+    name: "Structure & Flow"
+    description: "Logical narrative progression and organization"  
+    max_score: 5
+    scoring:
+      5: "Perfect logical flow, excellent organization"
+      4: "Strong structure with minor flow issues"
+      3: "Generally well-organized with some disruptions"
+      2: "Structural issues affecting readability"
+      1: "Poor organization"
+      0: "No clear structure or flow"
+
+  seo_readability:
+    name: "SEO & Readability"
+    description: "Optimized for search and accessible to readers"
+    max_score: 5
+    scoring:
+      5: "Excellent SEO optimization and readability"
+      4: "Strong optimization with minor improvements needed"
+      3: "Generally optimized with some gaps"
+      2: "Significant SEO/readability issues"
+      1: "Poor optimization"
+      0: "No SEO consideration or very poor readability"
+
+  style_voice:
+    name: "Style & Voice Preservation"
+    description: "Preserves user's original writing style while maintaining brand compliance"
+    max_score: 5
+    scoring:
+      5: "Perfect preservation of user's unique voice and style with appropriate brand integration"
+      4: "Strong preservation of user's voice with minor style adjustments"
+      3: "Generally maintains user's voice with some unnecessary formalization"
+      2: "Significant loss of user's personal style or over-corporatization"
+      1: "Poor preservation - user's voice heavily altered or genericized"
+      0: "User's original voice completely lost or replaced with corporate speak"
+
+risk_flags:
+  security:
+    description: "No security vulnerabilities or sensitive information disclosed"
+    blocking: true
+    
+  legal:
+    description: "No legal issues, competitor bashing, or unfounded claims"
+    blocking: true
+    
+  accuracy:
+    description: "All facts and statistics verified and accurate with real sources"
+    blocking: true
+    
+  fabrication:
+    description: "No fictional sources, fabricated citations, or placeholder URLs"
+    blocking: true
+    
+  compliance:
+    description: "Meets company editorial and brand guidelines"
+    blocking: false
+
+notes: |
+  - Style/voice preservation is CRITICAL - user's individual writing style must be maintained above all else
+  - This is content with personal touches that is being improved, not corporate content being created from scratch
+  - Apply brand guidelines WITHOUT altering the user's authentic voice and personality
+  - Preserve user's word choices, sentence patterns, analogies, and unique expressions
+  - Risk flags marked as "blocking: true" require resolution before advancement
